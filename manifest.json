@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Unfukparaplus",
+    "description": "Unfukulate Paramount+",
+    "version": "1.0",
+    "action": {
+        "default_icon": "unfuk.png"
+    },
+    "icons": {
+        "16": "unfuk_16.png",
+        "32": "unfuk_32.png",
+        "48": "unfuk_48.png",
+        "128": "unfuk_128.png"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "fixes/ytiny.js"
+            ],
+            "matches": [
+                "https://www.paramountplus.com/shows/video/*"
+            ]
+        }
+    ]
+}
